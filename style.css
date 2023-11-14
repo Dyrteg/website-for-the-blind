@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('./font/Lato-Regular.ttf');
+    scr: url('./font/Lato-Bold.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    list-style: none;
+}
+
+.container {
+    max-width: 1770px;
+    margin: auto;
+}
+
+.header {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--3, #2D2D2D);
+}
+
+.logo__color {
+    color: var(--2, #3670C7);
+}
+
+.main-button__case {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background: #3670C7;
+    width: 151px;
+    height: 54px;
+    appearance: none;
+    border: 0;
+    justify-content: center;  
+}
+
+.main-button__text {
+    font-size: 22px;
+    line-height: 150%;
+    color: #fff;
+    margin-left: 7px;
+}
+
+.search__form {
+    position: relative;
+    width: 656px;
+    margin: 0 auto;
+}
+
+.search__d1 input {
+    width: 656px;
+    height: 54px;
+    border: 0px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    background: #EFEFEF;
+    color: #000;
+    padding-left: 40px;
+}
+
+.search__d1 button {
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    left: 555px;
+    width: 101px;
+    height: 54px;
+    border: none;
+    background: var(--2, #3670C7);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.search__d1 button:before {
+    content: url('./img/search.png');
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 61px;
+}
+
+.list__text {
+    font-weight: 700;
+}
+
+.banner {
+    background-image: url('./img/banner.png');
+    height: 480px;
+    margin-top: 90px;
+    color: #fff;
+}
+
+.banner__title-text {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 130%;
+    padding-top: 145px;
+    padding-left: 112px;
+}
+
+.banner__timer {
+    margin-top: 100px;
+}
+
+.timer__figure {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.timer__text {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.banner__timer-section {
+    gap: 30px;
+}
+
+.banner__timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-gap {
+    gap: 6px;
+}
+
+.main {
+    color: white;
+    margin-top: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+    "book clock shoes shoes gift gift"
+    "sneaker sneaker shoes shoes comp comp"
+    "year year year year dress proper"
+    "year year year year dress newyear";
+    gap: 60px;
+}
+
+.grid-bold {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.grid__book {
+    background-image: url('./img/book.png');
+    grid-area: book;
+}
+
+.grid__book-text {
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-top: 97px;
+}
+
+.book-text__bold {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.grid__clock {
+    background-image: url('./img/clock.png');
+    grid-area: clock;
+}
+
+.grid__clock-text {
+    padding-left: 14px;
+    padding-top: 78px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.grid__book, .grid__clock, .grid__newyear, .grid__proper {
+    width: 245px;
+    height: 245px;
+}
+
+.grid__sneaker {
+    background-image: url('./img/sneaker.png');
+    grid-area: sneaker;
+}
+
+.grid__shoes {
+    background-image: url('./img/shoes.png');
+    width: 550px;
+    height: 550px;
+    grid-area: shoes;
+}
+
+.grid__shoes-rect {
+    padding-top: 350px;
+    padding-left: 20px;
+}
+
+.grid__shoes-back {
+    width: 510px;
+    height: 178px;
+    border-radius: 20px;
+    background: #38C0EB;
+}
+
+.shoes-text__bold {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.grid__shoes-text {
+    font-size: 40px;
+    padding-top: 26px;
+    padding-left: 23px;
+    width: 463px;
+}
+
+.grid__gift {
+    background-image: url('./img/gift.png');
+    grid-area: gift;
+}
+
+.grid__gift-text{
+    width: 360px;
+    padding-top: 104px;
+    padding-left: 30px;
+}
+
+.grid__comp {
+    background-image: url('./img/computer.png');
+    grid-area: comp;
+}
+
+.grid__comp-text {
+    padding-top: 160px;
+    padding-left: 30px;
+}
+
+.grid__comp, .grid__gift, .grid__sneaker {
+    width: 550px;
+    height: 245px;
+}
+
+.grid__year {
+    background-image: url('./img/year.png');
+    width: 1160px;
+    height: 550px;
+    grid-area: year;
+}
+
+.grid__year-rect {
+    padding-top: 385px;
+    padding-left: 50px;
+}
+
+.grid__year-back {
+    width: 643px;
+    height: 115px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.grid__year-text {
+    font-weight: 700;
+    color: #F91155;
+    text-transform: uppercase;
+    padding-top: 32px;
+    padding-left: 42px;
+}
+
+.grid__dress {
+    background-image: url('./img/dress.png');
+    width: 245px;
+    height: 550px;
+    grid-area: dress;
+}
+
+.grid__proper {
+    background-image: url('./img/proper.png');
+    grid-area: proper;
+}
+
+.grid__proper-text {
+    padding-top: 147px;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.grid__newyear {
+    background-image: url('./img/newyear.png');
+    grid-area: newyear;
+}
+
+.product {
+    margin-top: 100px;
+}
+
+.product__title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.product__cards {
+    margin-top: 50px;
+}
+
+.cards__price {
+    margin-top: 25px;
+}
+
+.cards__price-real {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cards__price-fake {
+    font-size: 20px;
+    text-decoration-line: line-through;
+    margin-left: 28px;
+}
+
+.cards__description {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.product__total {
+    gap: 30px;
+    flex-wrap: wrap;
+}
