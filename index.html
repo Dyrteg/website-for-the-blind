@@ -12,14 +12,16 @@
 
         <header class="header">
             <div class="header__logo logo">
-                <p class="logo__text">
-                    Shop<span class="logo__color">Online</span>
-                </p>
+                <a href="#">
+                    <p class="logo__text">
+                        Shop<span class="logo__color">Online</span>
+                    </p>
+                </a>
             </div>
 
             <div class="header__main-button main-button">
                 <button class="main-button__case">
-                    <img class="main-button__image" src="./img/sort.png" alt="Меню">
+                    <img class="main-button__image" src="./img/sort.png" alt="Меню" aria-hidden="true">
                     <p class="main-button__text">Меню</p>
                 </button>
                 </div>
@@ -28,7 +30,7 @@
                 <div class="search__d1">
                     <form class="search__form">
                     <input type="text" placeholder="Я ищу...">
-                    <button type="submit"></button>
+                    <button type="submit" aria-label="Поиск товаров"></button>
                     </form>
                 </div>
             </div>
@@ -37,19 +39,19 @@
                 <ul class="list">
                     <a href="#">
                         <li class="list__item">
-                            <img src="./img/person.png" alt="" class="list__image"></img>
+                            <img src="./img/person.png" alt="Человек" class="list__image"></img>
                             <p class="list__text">Профиль</p>
                         </li>
                     </a>
                     <a href="#">
                         <li class="list__item">
-                            <img src="./img/Vector.png" alt="" class="list__image"></img>
+                            <img src="./img/Vector.png" alt="Корзина" class="list__image"></img>
                             <p class="list__text">Корзина</p>
                         </li>
                     </a>
                     <a href="#">
                         <li class="list__item">
-                            <img src="./img/favorite.png" alt="" class="list__image"></img>
+                            <img src="./img/favorite.png" alt="Сердце" class="list__image"></img>
                             <p class="list__text">Избранное</p>
                         </li>
                     </a>
@@ -60,11 +62,11 @@
         <section class="banner">
             <div class="banner__base">
                 <div class="banner__title">
-                    <p class="banner__title-text">
+                    <h1 class="banner__title-text" aria-label="-50% на все ноутбуки" tabindex="0">
                         -50% на все ноутбуки
-                    </p>
+                    </h1>
                 </div>
-                <div class="banner__timer">
+                <div class="banner__timer" tabindex="0">
                     <div class="banner__timer-text">
                         <p>До конца акции:</p>
                     </div>
@@ -97,11 +99,14 @@
                 <a href="#" class="grid__clock">
                     <div class="grid__clock">
                         <p class="grid__clock-text">Время скидок!</p>
+                        <p class="visually-hidden">25% скидка</p>
                     </div>
                 </a>
 
                 <a href="#" class="grid__sneaker">
-                    <div class="grid__sneaker"></div>
+                    <div class="grid__sneaker">
+                        <p class="visually-hidden">Кроссовки по скидке 40%</p>
+                    </div>
                 </a>
 
                 <a href="#" class="grid__shoes">
@@ -125,6 +130,7 @@
                 <a href="#" class="grid__comp">
                     <div class="grid__comp">
                         <p class="grid__comp-text grid-bold">Выгодно в декабре!</p>
+                        <p class="visually-hidden">15% скидка</p>
                     </div>
                 </a>
 
@@ -141,95 +147,100 @@
                 </a>
 
                 <a href="#" class="grid__dress">
-                    <div class="grid__dress"></div>
+                    <div class="grid__dress">
+                        <p class="visually-hidden">Женская одежда скидка 55%</p>
+                    </div>
                 </a>
 
                 <a href="#" class="grid__proper">
                     <div class="grid__proper">
+                        <p class="visually-hidden">25% скидка</p>
                         <p class="grid__proper-text">На бытовую химию</p>
                     </div>
                 </a>
 
                 <a href="#" class="grid__newyear">
-                    <div class="grid__newyear"></div>
+                    <div class="grid__newyear">
+                        <p class="visually-hidden">Новогодние украшения</p>
+                    </div>
                 </a>
             </div>
         </main>
 
         <section class="product">
-            <h1 class="product__title">Это выгодно!</h1>
+            <h1 class="product__title" tabindex="0">Это выгодно!</h1>
 
             <div class="product__total flex-center">
                 <div class="product__cards">
                     <a href="#"><img src="./img/card.png" alt="Картинка футболок" class="cards__image"></a>
                     <div class="cards__price flex-center">
-                        <p class="cards__price-real">1299 ₽</p>
-                        <p class="cards__price-fake">2598 ₽</p>
+                        <p class="cards__price-real">1299 ₽</p><p class="visually-hidden" >цена по скидке</p>
+                        <p class="cards__price-fake">2598 ₽</p><p class="visually-hidden" >цена без скидки</p>
                     </div>
-                    <div class="cards__description">Пара футболок</div>
+                    <div class="cards__description" tabindex="0">Пара футболок</div>
                 </div>
     
                 <div class="product__cards">
                     <a href="#"><img src="./img/card.png" alt="Картинка футболок" class="cards__image"></a>
                     <div class="cards__price flex-center">
-                        <p class="cards__price-real">1299 ₽</p>
-                        <p class="cards__price-fake">2598 ₽</p>
+                        <p class="cards__price-real">1299 ₽</p><p class="visually-hidden" >цена по скидке</p>
+                        <p class="cards__price-fake">2598 ₽</p><p class="visually-hidden" >цена без скидки</p>
                     </div>
-                    <div class="cards__description">Пара футболок</div>
+                    <div class="cards__description" tabindex="0">Пара футболок</div>
                 </div>
                 
                 <div class="product__cards">
                     <a href="#"><img src="./img/card.png" alt="Картинка футболок" class="cards__image"></a>
                     <div class="cards__price flex-center">
-                        <p class="cards__price-real">1299 ₽</p>
-                        <p class="cards__price-fake">2598 ₽</p>
+                        <p class="cards__price-real">1299 ₽</p><p class="visually-hidden" >цена по скидке</p>
+                        <p class="cards__price-fake">2598 ₽</p><p class="visually-hidden" >цена без скидки</p>
                     </div>
-                    <div class="cards__description">Пара футболок</div>
+                    <div class="cards__description" tabindex="0">Пара футболок</div>
                 </div>
 
                 <div class="product__cards">
                     <a href="#"><img src="./img/card.png" alt="Картинка футболок" class="cards__image"></a>
                     <div class="cards__price flex-center">
-                        <p class="cards__price-real">1299 ₽</p>
-                        <p class="cards__price-fake">2598 ₽</p>
+                        <p class="cards__price-real">1299 ₽</p><p class="visually-hidden" >цена по скидке</p>
+                        <p class="cards__price-fake">2598 ₽</p><p class="visually-hidden" >цена без скидки</p>
                     </div>
-                    <div class="cards__description">Пара футболок</div>
+                    <div class="cards__description" tabindex="0">Пара футболок</div>
                 </div>
 
                 <div class="product__cards">
                     <a href="#"><img src="./img/card.png" alt="Картинка футболок" class="cards__image"></a>
                     <div class="cards__price flex-center">
-                        <p class="cards__price-real">1299 ₽</p>
-                        <p class="cards__price-fake">2598 ₽</p>
+                        <p class="cards__price-real">1299 ₽</p><p class="visually-hidden" >цена по скидке</p>
+                        <p class="cards__price-fake">2598 ₽</p><p class="visually-hidden" >цена без скидки</p>
                     </div>
-                    <div class="cards__description">Пара футболок</div>
+                    <div class="cards__description" tabindex="0">Пара футболок</div>
                 </div>
 
                 <div class="product__cards">
                     <a href="#"><img src="./img/card.png" alt="Картинка футболок" class="cards__image"></a>
                     <div class="cards__price flex-center">
-                        <p class="cards__price-real">1299 ₽</p>
-                        <p class="cards__price-fake">2598 ₽</p>
+                        <p class="cards__price-real">1299 ₽</p><p class="visually-hidden" >цена по скидке</p>
+                        <p class="cards__price-fake">2598 ₽</p><p class="visually-hidden" >цена без скидки</p>
                     </div>
-                    <div class="cards__description">Пара футболок</div>
+                    <div class="cards__description" tabindex="0">Пара футболок</div>
                 </div>
 
                 <div class="product__cards">
                     <a href="#"><img src="./img/card.png" alt="Картинка футболок" class="cards__image"></a>
                     <div class="cards__price flex-center">
-                        <p class="cards__price-real">1299 ₽</p>
-                        <p class="cards__price-fake">2598 ₽</p>
+                        <p class="cards__price-real">1299 ₽</p><p class="visually-hidden" >цена по скидке</p>
+                        <p class="cards__price-fake">2598 ₽</p><p class="visually-hidden" >цена без скидки</p>
                     </div>
-                    <div class="cards__description">Пара футболок</div>
+                    <div class="cards__description" tabindex="0">Пара футболок</div>
                 </div>
 
                 <div class="product__cards">
                     <a href="#"><img src="./img/card.png" alt="Картинка футболок" class="cards__image"></a>
                     <div class="cards__price flex-center">
-                        <p class="cards__price-real">1299 ₽</p>
-                        <p class="cards__price-fake">2598 ₽</p>
+                        <p class="cards__price-real">1299 ₽</p><p class="visually-hidden" >цена по скидке</p>
+                        <p class="cards__price-fake">2598 ₽</p><p class="visually-hidden" >цена без скидки</p>
                     </div>
-                    <div class="cards__description">Пара футболок</div>
+                    <div class="cards__description" tabindex="0">Пара футболок</div>
                 </div>
             </div>
         </section>
